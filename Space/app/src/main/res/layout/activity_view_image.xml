@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ViewImage">
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" tools:srcCompat="@tools:sample/avatars[5]"
+            android:id="@+id/imageFull"
+            android:background="@android:color/black"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintVertical_bias="1.0"/>
+    <TextView
+            android:layout_width="match_parent"
+            android:background="#68878888"
+            android:layout_height="34dp" android:id="@+id/textView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/coordinatorLayout2" android:layout_marginEnd="0dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageFull" android:layout_marginStart="0dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:padding="5dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/view_detail" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginEnd="8dp"/>
+    <ImageButton
+            android:layout_width="32dp"
+            android:background="@drawable/ic_file_download_black_24dp"
+            android:layout_height="29dp" app:srcCompat="@drawable/ic_file_download_black_24dp"
+            android:id="@+id/btn_save" android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="24dp"/>
+    <ImageButton
+            android:layout_width="52dp"
+            android:background="@drawable/ic_wallpaper_button_unchecked_black_24dp"
+            android:layout_height="51dp" app:srcCompat="@drawable/ic_wallpaper_button_unchecked_black_24dp"
+            android:id="@+id/btn_wall" android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+    <ImageButton
+            android:layout_width="38dp"
+            android:background="@color/cardview_shadow_end_color"
+            android:layout_height="37dp" app:srcCompat="@drawable/ic_wallpaper_button_unchecked_black_24dp"
+            android:id="@+id/btn_lock"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="20dp" android:layout_marginBottom="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:hint="text"
+            android:textColor="#ffff"
+            android:textStyle="italic"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/unsplash"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="4dp"
+            android:layout_marginStart="16dp" app:layout_constraintStart_toStartOf="@+id/imageFull"/>
+</android.support.constraint.ConstraintLayout>
